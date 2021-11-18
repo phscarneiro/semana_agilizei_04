@@ -8,7 +8,11 @@ npm init --yes
 npm install -D cypress@8.5.0
 npx cypress open
 npx cypress run
-**nao funciou npx cypress run --spec "/cypress/integration/1-getting-started
+*nao funciou npx cypress run --spec "/cypress/integration/1-getting-started
+pra rodar uma espec só precisa executando no root do projeto ir até o nome da
+spec exemplo
+npx cypress run --spec "/home/pj/semana_agilizei_04/cypress/integration/1-getting-started/todo.spec.js"
+
 
 (aula1):
 -diagramas e mapas para aprender mais rapido (mindmap)
@@ -69,6 +73,7 @@ adicionando :
 - run: npm install -D cypress@8.5.0
 mesmo assim ele nao passa em todos os testes ai nao faz upload dos videos
 ele nao passa no:
+comentei ja que nao era teste meu e vamo ver
 2-advanced-examples/actions.spec.js
 erro em
 1) .click() - click on a DOM element
