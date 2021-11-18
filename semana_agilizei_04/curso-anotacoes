@@ -1,0 +1,71 @@
+comandos usados (aula1):
+para linux mint cinnamon
+sudo apt update
+sudo apt install nodejs
+sudo apt update
+sudo apt install npm
+npm init --yes
+npm install -D cypress@8.5.0
+npx cypress open
+npx cypress run
+**nao funciou npx cypress run --spec "/cypress/integration/1-getting-started
+
+(aula1):
+-diagramas e mapas para aprender mais rapido (mindmap)
+-para rodar em linux mint cinnamon além de precisar
+instalar o nodejs precisa instalar o npm
+-visual studio tentar rodar acabou travando 3x, usando o atom nao teve esse
+problema
+-usando meu terminal direto fora do editor parece "fluir melhor"
+-instalacao de programas
+-para abrir cypress
+-npx cypress open
+-rodando teste headless "background"
+-endereço do cypress no meu pc /home/pj/.cache/Cypress/8.5.0
+-primeira execucao do Cypress e geraçao de video
+-completo
+-separado por teste nao conseguir rodar o comandos
+**npx cypress run --spec "/cypress/integration/1-getting-started"
+
+aula2 comandos
+plano aula 2
+1.conhecendo site
+2.configuraçoes
+2.1 add auto complete para as configuraçoes
+2.2 adicionar largura padrao e height **nfiz
+3. criando pre teste
+4. refatorando nomenclatura do tested
+5. isolando fator externo(mock)
+6. adicionando asserçoes
+7. abstrair comandos de login para os comandos customizados
+8. pular navegaçao usando localstorage e interçao com api
+9. extrair a nossa url para o arquivo de configuraçoes
+10.documentar comandos customizados
+11. add projeto ao github
+12. configurando github actions
+
+pteste@mail.com
+Qwer1234
+
+(aula2)
+guide boas pratica javascript teste
+https://github.com/goldbergyoni/javascript-testing-best-practices#readme
+
+principio nomenclatura do teste:
+(1) What is being tested? For example, the ProductsService.addNewProduct method
+(2) Under what circumstances and scenario? For example, no price is passed to the method
+(3) What is the expected result? For example, the new product is not approved
+:
+cy intercept para isolar uma requsiçao externa alterando o que deve ser
+retornado (codigo e imagem por exemplo) em vez de precisar conectar a servidor externo
+https://docs.cypress.io/api/commands/intercept#Syntax
+pra funcionar o codigo com intercept quanto imagem eu precisei por o nome
+completo da imagem "cafe.JPG"
+
+depois de 1 hora do video 2
+gist do commands.js
+https://gist.github.com/samlucax/14b7d38cf33c967079f7d62a13ee4d29
+gist do index.d.ts
+https://gist.github.com/samlucax/01fbd9817a6c3bd2ea16b7044dafa06b
+gist do main.yml
+https://gist.github.com/samlucax/9703f3121490d105d6680208998ee183
