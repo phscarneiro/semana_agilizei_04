@@ -25,11 +25,8 @@ jobs:
         node-version: 14.x
 
     # instalacao das dependências
-    - run: sudo apt update
-    - run: sudo apt install nodejs
-    - run: sudo apt install npm
-    - run: sudo npm init --yes
-    - run: npm install -D cypress@8.5.0
+    - run: npm install 
+
 
     # execucao dos testes
     - run: npx cypress run
