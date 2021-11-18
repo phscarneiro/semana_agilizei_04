@@ -25,9 +25,8 @@ jobs:
         node-version: 14.x
 
     # instalacao das dependências
-    - run: npm install 
-
-
+    - run: npm install
+    - run: npm install -D cypress@8.5.0
     # execucao dos testes
     - run: npx cypress run
 
