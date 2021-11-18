@@ -61,5 +61,5 @@ retornado (codigo e imagem por exemplo) em vez de precisar conectar a servidor e
 https://docs.cypress.io/api/commands/intercept#Syntax
 pra funcionar o codigo com intercept quanto imagem eu precisei por o nome
 completo da imagem "cafe.JPG"
-
-o codigo do actions nao rolou pra mim
+- pra mim o codigo da actions da forma que ta para no passo "run npx cypress run"
+- se eu add o passo de install cypress e mudei o "viewportHeight":660,"
