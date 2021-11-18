@@ -106,9 +106,7 @@ context('Actions', () => {
       .click(170, 165)
 
     // click multiple elements by passing multiple: true
-    //original cy.get('.action-labels>.label').click({ multiple: true })
-    cy.get('.action-labels>.label').click({ force: true })
-
+    cy.get('.action-labels>.label').click({ multiple: true })
     // Ignore error checking prior to clicking
     cy.get('.action-opacity>.btn').click({ force: true })
   })
