@@ -113,6 +113,7 @@ context('Actions', () => {
     // Ignore error checking prior to clicking
 //    cy.get('.action-opacity>.btn').click({ force: true })
 //  })
+//
 
   it('.dblclick() - double click on a DOM element', () => {
     // https://on.cypress.io/dblclick
