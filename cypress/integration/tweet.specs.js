@@ -20,7 +20,11 @@ describe('Twitter Clone - Tweet', () => {
   it('se credenciais validas usuario autenticado e enviou tweet,o tweet deve aparecer na timeline', () => {
     cy.login()
     cy.visit('https://twitter-clone-example.herokuapp.com');
+<<<<<<< HEAD
+    cy.get('textarea[cols=48]').type('Eu quero que a minha carreira profissional vitoriosa e que eu consiga correr atras do prejuizo como hoje programando 5 da manha')
+=======
     cy.get('textarea[cols=48]').type('Eu quero que a minha carreira profissional seja cheia de desafios e vitorias e que eu consiga correr atras do prejuizo como hoje programando 5 da manha')
+>>>>>>> a52601db80aa4d139cd2d4dbf2e244dcab3c6a63
     cy.get ('button.sc-fzplWN.pDAkO').click()
 
   });

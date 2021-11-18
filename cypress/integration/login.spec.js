@@ -5,7 +5,6 @@
 2. sob que condiçoes? autenticar credenciais validas
 3. quao o resultado esperado? deve ser autenticado
 */
-
 describe('Twitter Clone - Login', () => {
   // hooks antes do teste before
   // hooks depois /after
@@ -24,20 +23,19 @@ describe('Twitter Clone - Login', () => {
       statusCode: 200,
       fixture:'cafe.JPG'
     }).as('ts')
-
   });
 
   it('se credenciais validas usuario autenticado', () => {
     cy.login()
     cy.visit('https://twitter-clone-example.herokuapp.com');
-    cy.get ('nav ul li')
-    .should('be.visible')
-    .and('have.lenght',6)
+    //cy.get ('nav ul li')
+    //.should('be.visible')
+    //.and('have.lenght',6)
+    cy.get('textarea[cols=48]').type('oitweet COMO TA A VIDA QUASE 5 DA MANHA')
+    cy.get ('button.sc-fzplWN.pDAkO').click()
     // cy.get('input[type=email]').type('pteste@mail.com')
     // cy.get('input[type=password]').type('Qwer1234')
     // cy.get('button[type=submit]').click() comando antes de comando personalizado
     // cy.login()
-
-
   });
 });
